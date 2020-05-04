@@ -1,6 +1,6 @@
-# meditation_app
+# Meditation_app
 
-A new Flutter project.
+A new Flutter project or can call daily excrecises
 
 ## Getting Started
 
