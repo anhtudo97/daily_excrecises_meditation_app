@@ -4,6 +4,7 @@ import 'package:meditation_app/constants.dart';
 import 'package:meditation_app/screens/detail_screen.dart';
 import 'package:meditation_app/widgets/bottom_navbar.dart';
 import 'package:meditation_app/widgets/category_card.dart';
+import 'package:meditation_app/widgets/search_bar.dart';
 
 void main() => runApp(MyApp());
 
@@ -71,26 +72,7 @@ class HomeScreen extends StatelessWidget {
                         .display1
                         .copyWith(fontWeight: FontWeight.w900),
                   ),
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      vertical: 30,
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 30,
-                      vertical: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(29.5),
-                    ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Search",
-                        icon: SvgPicture.asset("assets/icons/search.svg"),
-                        border: InputBorder.none,
-                      ),
-                    ),
-                  ),
+                  SearchBar(),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
