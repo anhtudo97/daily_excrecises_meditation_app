@@ -22,11 +22,11 @@ class BottomNavBar extends StatelessWidget {
           BottomNavItem(
             title: "Today",
             svgSrc: "assets/icons/calendar.svg",
-            isActive: true,
           ),
           BottomNavItem(
             title: "All Excrecises",
             svgSrc: "assets/icons/gym.svg",
+            isActive: true,
           ),
           BottomNavItem(
             title: "Settings",
